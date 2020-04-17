@@ -14,7 +14,6 @@ bot.help((ctx) => ctx.reply("Not yet fella!"));
 bot.command("stats", (ctx) => {
   const user = ctx.from.username;
 
-  console.log(user);
   ctx.reply(`Have some stats @${user}!`);
 });
 
