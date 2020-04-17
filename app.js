@@ -12,9 +12,10 @@ bot.start((ctx) => ctx.reply("Welcome mate!"));
 bot.help((ctx) => ctx.reply("Not yet fella!"));
 
 bot.command("stats", (ctx) => {
-    const user = ctx.user.id;
-    ctx.reply(`Have some stats ${user}!`);
-})
+  const user = ctx.from.username;
 
+  console.log(user);
+  ctx.reply(`Have some stats @${user}!`);
+});
 
 bot.launch();
