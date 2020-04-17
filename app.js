@@ -19,4 +19,8 @@ bot.command("stats", (ctx) => {
   ctx.reply(`Have some stats @${user}!`, menus.mainMenu);
 });
 
+bot.command("seila2", (ctx) => {
+  ctx.reply(`Have some stats`, menus.statsMenu);
+})
+
 bot.launch();
