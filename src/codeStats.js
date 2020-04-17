@@ -6,4 +6,6 @@ const getUserStats = async (user) => {
   return result;
 };
 
-export default getUserStats;
+module.exports = {
+  getUserStats
+};
